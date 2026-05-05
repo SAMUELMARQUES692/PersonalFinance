@@ -23,7 +23,6 @@ public class TransactionController {
 
     private final TransactionService transactionService;
 
-
     @GetMapping
     public ResponseEntity<List<TransactionResponseDTO>> findAll(@AuthenticationPrincipal JWTUserData userData) {
         return ResponseEntity.ok(transactionService.findAll(userData.id()));

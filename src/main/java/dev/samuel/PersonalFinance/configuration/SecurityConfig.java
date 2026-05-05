@@ -1,6 +1,5 @@
 package dev.samuel.PersonalFinance.configuration;
 
-
 import jakarta.servlet.DispatcherType;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
