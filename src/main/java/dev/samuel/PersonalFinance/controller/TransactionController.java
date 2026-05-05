@@ -3,6 +3,7 @@ package dev.samuel.PersonalFinance.controller;
 import dev.samuel.PersonalFinance.DTOs.TransactionRequestDTO;
 import dev.samuel.PersonalFinance.DTOs.TransactionResponseDTO;
 import dev.samuel.PersonalFinance.configuration.JWTUserData;
+import dev.samuel.PersonalFinance.documentation.TransactionControllerDoc;
 import dev.samuel.PersonalFinance.enums.TransactionType;
 import dev.samuel.PersonalFinance.service.TransactionService;
 import jakarta.validation.Valid;
@@ -19,7 +20,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/transactions")
-public class TransactionController {
+public class TransactionController implements TransactionControllerDoc {
 
     private final TransactionService transactionService;
 

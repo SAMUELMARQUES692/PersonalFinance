@@ -4,6 +4,7 @@ import dev.samuel.PersonalFinance.DTOs.BalanceResponseDTO;
 import dev.samuel.PersonalFinance.DTOs.CategorySummaryDTO;
 import dev.samuel.PersonalFinance.DTOs.MonthlyReportDTO;
 import dev.samuel.PersonalFinance.configuration.JWTUserData;
+import dev.samuel.PersonalFinance.documentation.ReportControllerDoc;
 import dev.samuel.PersonalFinance.service.ReportService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -17,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/report")
-public class ReportController {
+public class ReportController implements ReportControllerDoc {
 
     private final ReportService reportService;
 

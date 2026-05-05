@@ -3,6 +3,7 @@ package dev.samuel.PersonalFinance.controller;
 import dev.samuel.PersonalFinance.DTOs.CategoryRequestDTO;
 import dev.samuel.PersonalFinance.DTOs.CategoryResponseDTO;
 import dev.samuel.PersonalFinance.configuration.JWTUserData;
+import dev.samuel.PersonalFinance.documentation.CategoryControllerDoc;
 import dev.samuel.PersonalFinance.service.CategoryService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -16,7 +17,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/categories")
-public class CategoryController {
+public class CategoryController implements CategoryControllerDoc {
 
     private final CategoryService categoryService;
 

@@ -3,6 +3,7 @@ package dev.samuel.PersonalFinance.controller;
 import dev.samuel.PersonalFinance.DTOs.UserRegisterDTO;
 import dev.samuel.PersonalFinance.DTOs.UserResponseDTO;
 import dev.samuel.PersonalFinance.configuration.TokenService;
+import dev.samuel.PersonalFinance.documentation.AuthControllerDoc;
 import dev.samuel.PersonalFinance.exception.UsernameOrPasswordInvalidException;
 import dev.samuel.PersonalFinance.model.UserModel;
 import dev.samuel.PersonalFinance.records.LoginRequest;
@@ -25,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/auth")
-public class AuthController {
+public class AuthController implements AuthControllerDoc{
 
     private final TokenService tokenService;
     private final AuthenticationManager authenticationManager;
